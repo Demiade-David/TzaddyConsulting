@@ -32,7 +32,7 @@ export default function Insights() {
             className="flex flex-col rounded-2xl border border-gray-200 bg-white p-7 dark:border-gray-800 dark:bg-gray-950"
           >
             <div className="flex items-center justify-between gap-3 text-sm text-gray-600 dark:text-gray-400">
-              <span>{article.publishedAt ?? "Publication date to be confirmed"}</span>
+              
               <span className="rounded-full bg-yellow-100 px-3 py-1 font-medium text-yellow-900 dark:bg-yellow-500/15 dark:text-yellow-300">
                 {article.category}
               </span>
