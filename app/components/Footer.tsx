@@ -1,16 +1,24 @@
 import Link from "next/link";
 
 export default function Footer() {
+  const navLinks = [
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/services", label: "Services" },
+    { href: "/insights", label: "Insights" },
+    { href: "/contact", label: "Contact Us" },
+  ];
+
   return (
     <footer className="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 mt-16">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">
-              Tzaddy
+              Tzaddy Consulting
             </h3>
             <p className="text-gray-600 dark:text-gray-400">
-              Building exceptional digital experiences.
+              Accounting, tax and business advisory for Nigerian SMEs.
             </p>
           </div>
           <div>
@@ -18,54 +26,38 @@ export default function Footer() {
               Navigation
             </h4>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/"
-                  className="text-gray-600 dark:text-gray-400 hover:text-yellow-500 dark:hover:text-yellow-400"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="text-gray-600 dark:text-gray-400 hover:text-yellow-500 dark:hover:text-yellow-400"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/insights"
-                  className="text-gray-600 dark:text-gray-400 hover:text-yellow-500 dark:hover:text-yellow-400"
-                >
-                  Insights
-                </Link>
-              </li>
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-600 dark:text-gray-400 hover:text-yellow-500 dark:hover:text-yellow-400"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
             <h4 className="font-semibold text-gray-900 dark:text-white mb-4">
-              Legal
+              Contact
             </h4>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-yellow-500 dark:hover:text-yellow-400"
-                >
-                  Privacy Policy
+            <address className="space-y-2 not-italic text-gray-600 dark:text-gray-400">
+              <p>
+                Tzaddy Consulting
+                <br />
+                No 90, MKO Abiola Way, Ring Road, Ibadan, Oyo State
+              </p>
+              <p>
+                <a href="tel:+2349095509872">+234 909 550 9872</a>
+              </p>
+              <p>
+                <a href="mailto:consultant@tzaddyconsulting.com.ng">
+                  consultant@tzaddyconsulting.com.ng
                 </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-600 dark:text-gray-400 hover:text-yellow-500 dark:hover:text-yellow-400"
-                >
-                  Terms of Service
-                </a>
-              </li>
-            </ul>
+              </p>
+              <p>Monday to Friday, 9am to 5pm</p>
+            </address>
           </div>
           <div>
             <h4 className="font-semibold text-gray-900 dark:text-white mb-4">
@@ -74,18 +66,22 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/tzaddyy-consulting/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-600 dark:text-gray-400 hover:text-yellow-500 dark:hover:text-yellow-400"
                 >
-                  Twitter
+                  LinkedIn
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/naijabiz_fixer"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-600 dark:text-gray-400 hover:text-yellow-500 dark:hover:text-yellow-400"
                 >
-                  LinkedIn
+                  Instagram
                 </a>
               </li>
             </ul>
@@ -93,7 +89,8 @@ export default function Footer() {
         </div>
         <div className="border-t border-gray-200 dark:border-gray-800 pt-8">
           <p className="text-center text-gray-600 dark:text-gray-400">
-            &copy; 2024 Tzaddy Consulting. All rights reserved.
+            &copy; {new Date().getFullYear()} Tzaddy Consulting. All rights
+            reserved.
           </p>
         </div>
       </div>

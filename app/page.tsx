@@ -1,146 +1,196 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Tzaddy Consulting: Tax and Accounting for Nigerian SMEs, Ibadan",
+  description:
+    "Ibadan accounting and tax firm for small businesses. Tax assessment defence, tax filing, bookkeeping and financial statements.",
+};
+
+const services = [
+  {
+    id: "tax-assessment-defence",
+    title: "Tax Assessment Defence",
+    description:
+      "Received a demand notice or an assessment you do not agree with? We review it, file the objection and represent you.",
+  },
+  {
+    id: "tax-compliance",
+    title: "Tax Compliance",
+    description:
+      "Company income tax, VAT, withholding tax, PAYE and personal income tax, filed correctly and on time.",
+  },
+  {
+    id: "bookkeeping-monthly-accounts",
+    title: "Bookkeeping and Monthly Accounts",
+    description:
+      "Monthly records, bank reconciliations and a report you can read and act on.",
+  },
+  {
+    id: "financial-statements",
+    title: "Financial Statements",
+    description:
+      "Annual accounts under IFRS for SMEs, even where records are incomplete.",
+  },
+  {
+    id: "business-setup-systems",
+    title: "Business Setup and Systems",
+    description:
+      "Chart of accounts, payroll, inventory and record keeping, set up properly from the start.",
+  },
+  {
+    id: "training-advisory",
+    title: "Training and Advisory",
+    description:
+      "Tax and record keeping training for business owners, plus cash flow projections and bank facility documents.",
+  },
+];
+
+const figures = [
+  {
+    figure: "21 years",
+    caption: "Our lead consultant's experience in accounting, audit and tax",
+  },
+  {
+    figure: "Over ₦1 billion",
+    caption:
+      "In tax assessments contested for 7 clients. Final agreed liability: ₦50 million.",
+  },
+  {
+    figure: "92",
+    caption: "Business owners trained at our 2025 Nigeria Tax Act webinar",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="min-h-screen bg-linear-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-black flex items-center">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <h1 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
-                  Welcome to Tzaddy Consulting
-                </h1>
-                <p className="text-xl text-gray-600 dark:text-gray-300">
-                  We deliver innovative solutions tailored to your business needs.
-                  Transform your vision into reality with our expert team.
-                </p>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="/contact"
-                  className="px-8 py-4 bg-linear-to-r from-yellow-500 to-yellow-600 text-black rounded-lg hover:shadow-lg transition-shadow font-semibold text-center"
-                >
-                  Get Started
-                </Link>
-                <Link
-                  href="/about"
-                  className="px-8 py-4 border-2 border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors font-semibold text-center"
-                >
-                  Learn More
-                </Link>
-              </div>
-
-              <div className="flex gap-8 pt-4">
-                <div>
-                  <p className="text-3xl font-bold text-gray-900 dark:text-white">
-                    50+
-                  </p>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    Projects Completed
-                  </p>
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-gray-900 dark:text-white">
-                    100%
-                  </p>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    Client Satisfaction
-                  </p>
-                </div>
-                <div>
-                  <p className="text-3xl font-bold text-gray-900 dark:text-white">
-                    24/7
-                  </p>
-                  <p className="text-gray-600 dark:text-gray-400">Support</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="absolute inset-0 bg-linear-to-br from-yellow-400 to-yellow-600 rounded-2xl blur-3xl opacity-30"></div>
-              <div className="relative bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-2xl">
-                <div className="space-y-4">
-                  <div className="h-4 bg-linear-to-r from-yellow-500 to-yellow-600 rounded-full"></div>
-                  <div className="space-y-3">
-                    <div className="h-3 bg-gray-300 dark:bg-gray-700 rounded-full w-5/6"></div>
-                    <div className="h-3 bg-gray-300 dark:bg-gray-700 rounded-full"></div>
-                    <div className="h-3 bg-gray-300 dark:bg-gray-700 rounded-full w-4/6"></div>
-                  </div>
-                </div>
-              </div>
+    <div>
+      <section className="bg-linear-to-br from-amber-50 via-white to-orange-50 dark:from-gray-950 dark:via-black dark:to-gray-900">
+        <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 md:py-28 lg:px-8">
+          <div className="max-w-4xl">
+            <p className="mb-5 font-semibold uppercase tracking-[0.18em] text-yellow-700 dark:text-yellow-400">
+              Accounting · Tax · Business Advisory
+            </p>
+            <h1 className="max-w-4xl text-4xl font-bold leading-tight tracking-tight text-gray-950 dark:text-white sm:text-5xl md:text-6xl">
+              Tax and accounting help for Nigerian small businesses
+            </h1>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-gray-700 dark:text-gray-300 sm:text-xl">
+              We keep your books in order, file your taxes on time, and stand
+              with you when the tax office raises an assessment. Based in
+              Ibadan, serving businesses across Nigeria.
+            </p>
+            <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+              <Link
+                href="/contact"
+                className="rounded-lg bg-yellow-500 px-7 py-4 text-center font-semibold text-black transition-colors hover:bg-yellow-400"
+              >
+                Talk to Us
+              </Link>
+              <Link
+                href="/services"
+                className="rounded-lg border border-gray-300 px-7 py-4 text-center font-semibold text-gray-900 transition-colors hover:bg-white dark:border-gray-700 dark:text-white dark:hover:bg-gray-900"
+              >
+                See Our Services
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-20 bg-white dark:bg-black">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-              Why Choose Us
+      <section
+        aria-label="Experience and outcomes"
+        className="bg-white py-14 dark:bg-black"
+      >
+        <div className="mx-auto grid max-w-6xl gap-8 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
+          {figures.map((item) => (
+            <div key={item.figure} className="text-center">
+              <p className="text-3xl font-bold text-gray-950 dark:text-white sm:text-4xl">
+                {item.figure}
+              </p>
+              <p className="mx-auto mt-3 max-w-sm text-base leading-7 text-gray-600 dark:text-gray-400">
+                {item.caption}
+              </p>
+            </div>
+          ))}
+          <p className="md:col-span-3 text-center text-base leading-7 text-gray-600 dark:text-gray-400">
+            Every tax case turns on its own facts and records. Past outcomes do
+            not predict future results.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-gray-50 py-20 dark:bg-gray-950">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-12 max-w-2xl">
+            <h2 className="text-3xl font-bold text-gray-950 dark:text-white sm:text-4xl">
+              What we do
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400">
-              We bring expertise, creativity, and dedication to every project
+            <p className="mt-4 text-lg leading-8 text-gray-600 dark:text-gray-400">
+              Practical accounting and tax support for the decisions and
+              deadlines that matter.
             </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Expert Team",
-                description:
-                  "Our highly skilled professionals bring years of experience to deliver exceptional results.",
-                icon: "🎯",
-              },
-              {
-                title: "Custom Solutions",
-                description:
-                  "We tailor our services to meet your unique business requirements and goals.",
-                icon: "⚙️",
-              },
-              {
-                title: "Fast Delivery",
-                description:
-                  "We work efficiently without compromising on quality to meet your timelines.",
-                icon: "⚡",
-              },
-            ].map((feature, index) => (
-              <div
-                key={index}
-                className="p-8 border border-gray-200 dark:border-gray-800 rounded-xl hover:shadow-lg transition-shadow"
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {services.map((service) => (
+              <Link
+                key={service.id}
+                href={`/services#${service.id}`}
+                className="group rounded-xl border border-gray-200 bg-white p-7 transition-shadow hover:shadow-lg dark:border-gray-800 dark:bg-black"
               >
-                <div className="text-4xl mb-4">{feature.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  {feature.title}
+                <h3 className="text-xl font-semibold text-gray-950 group-hover:text-yellow-700 dark:text-white dark:group-hover:text-yellow-400">
+                  {service.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400">
-                  {feature.description}
+                <p className="mt-3 leading-7 text-gray-600 dark:text-gray-400">
+                  {service.description}
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-linear-to-r from-yellow-500 to-yellow-600">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-black mb-4">
-            Ready to Transform Your Business?
+      <section className="bg-white py-20 dark:bg-black">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="font-semibold uppercase tracking-[0.16em] text-yellow-700 dark:text-yellow-400">
+              Who you will deal with
+            </p>
+            <h2 className="mt-4 text-3xl font-bold text-gray-950 dark:text-white sm:text-4xl">
+              Direct advice from the person doing the work
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-700 dark:text-gray-300">
+              Elizabeth Misan-Ulori, ACA, ACTI, leads every engagement. She
+              spent eight years in audit and tax at Baker Tilly Nigeria and
+              eight years running a school&apos;s finances before founding
+              Tzaddy Consulting in 2022. You deal with the person doing the
+              work.
+            </p>
+            <Link
+              href="/about"
+              className="mt-7 inline-flex font-semibold text-yellow-700 underline decoration-yellow-500 underline-offset-4 dark:text-yellow-400"
+            >
+              More about us
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-yellow-500 py-16">
+        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-black sm:text-4xl">
+            Got a letter from the tax office, or books that are behind?
           </h2>
-          <p className="text-xl text-gray-800 mb-8">
-            Let&apos;s work together to achieve your goals
+          <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-gray-900">
+            Tell us what you are dealing with. We reply within one working day.
           </p>
-          <Link
-            href="/contact"
-            className="inline-block px-8 py-4 bg-white text-yellow-600 rounded-lg hover:shadow-lg transition-shadow font-semibold"
+          <a
+            href="https://wa.me/2349095509872"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-8 inline-flex rounded-lg bg-black px-7 py-4 font-semibold text-white transition-colors hover:bg-gray-800"
           >
-            Start Your Project Today
-          </Link>
+            Message Us on WhatsApp
+          </a>
         </div>
       </section>
     </div>

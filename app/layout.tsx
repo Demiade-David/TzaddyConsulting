@@ -16,7 +16,6 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Tzaddy Consulting",
-  description: "Delivering innovative solutions tailored to your business needs.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

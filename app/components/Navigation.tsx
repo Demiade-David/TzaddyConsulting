@@ -10,7 +10,9 @@ export default function Navigation() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
+    { href: "/services", label: "Services" },
     { href: "/insights", label: "Insights" },
+    { href: "/contact", label: "Contact Us" },
   ];
 
   return (
@@ -19,11 +21,11 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="/IMG-20260814-WA0110.jpg.jpeg"
+              src="/tzaddy-mark.svg"
               alt="Tzaddy Consulting Logo"
-              width={40}
-              height={40}
-              className="rounded-lg"
+              width={44}
+              height={44}
+              unoptimized
             />
             <span className="text-xl font-bold text-gray-900 dark:text-white">
               Tzaddy Consulting
@@ -40,12 +42,6 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ))}
-            <Link
-              href="/contact"
-              className="px-4 py-2 bg-linear-to-r from-yellow-500 to-yellow-600 text-black rounded-lg hover:shadow-lg transition-shadow font-medium"
-            >
-              Contact Us
-            </Link>
           </div>
 
           <div className="md:hidden">
@@ -95,13 +91,6 @@ export default function Navigation() {
                   {link.label}
                 </Link>
               ))}
-              <Link
-                href="/contact"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="mt-1 px-3 py-2 bg-linear-to-r from-yellow-500 to-yellow-600 text-black rounded-lg hover:shadow-lg transition-shadow font-medium text-center"
-              >
-                Contact Us
-              </Link>
             </div>
           </div>
         )}

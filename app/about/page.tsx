@@ -1,104 +1,162 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "About Tzaddy Consulting: Elizabeth Misan-Ulori, ACA, ACTI",
+  description:
+    "Founded in 2022 and led by Elizabeth Misan-Ulori, ACA, ACTI, with 21 years in accounting, audit and tax.",
+};
+
+const workingPrinciples = [
+  {
+    title: "Records before opinions",
+    description:
+      "We advise from your documents, never from assumptions. If the records are weak, we fix that first.",
+  },
+  {
+    title: "Plain English",
+    description:
+      "You will understand what you are signing, what you owe and why.",
+  },
+  {
+    title: "Written scope and fee",
+    description:
+      "Every engagement starts with a letter stating the work, the timeline and the fee. No surprises.",
+  },
+];
+
 export default function About() {
   return (
-    <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="bg-linear-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-black py-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-4">
+    <div>
+      <section className="bg-linear-to-br from-amber-50 via-white to-orange-50 py-20 dark:from-gray-950 dark:via-black dark:to-gray-900">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <h1 className="text-4xl font-bold tracking-tight text-gray-950 dark:text-white sm:text-5xl">
             About Tzaddy Consulting
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300">
-            Dedicated to excellence and innovation since day one
+          <p className="mt-5 max-w-3xl text-xl leading-8 text-gray-700 dark:text-gray-300">
+            An accounting, tax and business advisory firm in Ibadan, serving
+            small and medium-sized businesses across Nigeria since 2022.
           </p>
         </div>
       </section>
 
-      {/* Our Story */}
-      <section className="py-20 bg-white dark:bg-black">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                Our Story
-              </h2>
-              <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
-                Tzaddy Consulting was founded with a simple mission: to help
-                businesses succeed through innovative solutions and expert
-                guidance. What started as a small team of passionate
-                professionals has grown into a trusted partner for companies of
-                all sizes.
+      <section className="bg-white py-20 dark:bg-black">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl">
+            <h2 className="text-3xl font-bold text-gray-950 dark:text-white">
+              Our story
+            </h2>
+            <div className="mt-6 space-y-5 text-lg leading-8 text-gray-700 dark:text-gray-300">
+              <p>
+                Most small businesses see an accountant once a year and hear
+                from the tax office only when something has gone wrong. By then
+                the records are thin, the deadline is close and the bill is
+                larger than it should be.
               </p>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                We believe in building long-term relationships with our clients,
-                understanding their unique challenges, and delivering solutions
-                that drive real, measurable results. Our commitment to quality
-                and excellence has made us a leader in our industry.
+              <p>
+                Tzaddy Consulting was founded in November 2022 to work the other
+                way round. We keep the records right through the year, file on
+                time, and explain the numbers in plain English. When an
+                assessment does arrive, the evidence to answer it is already on
+                file.
               </p>
-            </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-linear-to-br from-yellow-400 to-yellow-600 rounded-2xl blur-3xl opacity-20"></div>
-              <div className="relative bg-linear-to-br from-blue-50 to-purple-50 dark:from-gray-800 dark:to-gray-900 rounded-2xl p-12">
-                <div className="space-y-6">
-                  <div className="text-4xl font-bold text-yellow-600">10+</div>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    Years of combined experience
-                  </p>
-                  
-                </div>
-              </div>
+              <p>
+                Our clients include schools, contractors, consultancies, food
+                businesses and other owner-managed companies.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Our Values */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-            Our Core Values
+      <section className="bg-gray-50 py-20 dark:bg-gray-950">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_2fr] lg:px-8">
+          <div
+            aria-label="Professional headshot to be supplied"
+            className="flex aspect-square max-h-80 items-center justify-center rounded-2xl border border-dashed border-gray-300 bg-white text-6xl font-semibold text-yellow-700 dark:border-gray-700 dark:bg-black dark:text-yellow-400"
+          >
+            EM
+          </div>
+          <div>
+            <p className="font-semibold uppercase tracking-[0.16em] text-yellow-700 dark:text-yellow-400">
+              Lead consultant
+            </p>
+            <h2 className="mt-3 text-3xl font-bold text-gray-950 dark:text-white">
+              Elizabeth Omolade Misan-Ulori, ACA, ACTI
+            </h2>
+            <div className="mt-5 space-y-4 leading-8 text-gray-700 dark:text-gray-300">
+              <p>
+                Elizabeth has 21 years in accounting, audit and tax. She
+                managed a private school&apos;s finances for eight years, then
+                spent eight years at Baker Tilly Nigeria in Ibadan, first in
+                audit and later in the tax department. She founded Tzaddy
+                Consulting in 2022.
+              </p>
+              <p>
+                She trains business owners and fellow accountants on tax and
+                record keeping, and writes the weekly series NTA in Plain
+                English.
+              </p>
+            </div>
+
+            <dl className="mt-8 grid gap-6 sm:grid-cols-2">
+              <div>
+                <dt className="font-semibold text-gray-950 dark:text-white">
+                  Qualifications
+                </dt>
+                <dd className="mt-2 leading-7 text-gray-700 dark:text-gray-300">
+                  Associate, Institute of Chartered Accountants of Nigeria
+                  (2012). Associate, Chartered Institute of Taxation of Nigeria
+                  (2020). BSc Accounting, Olabisi Onabanjo University.
+                </dd>
+              </div>
+              <div>
+                <dt className="font-semibold text-gray-950 dark:text-white">
+                  Professional service
+                </dt>
+                <dd className="mt-2 leading-7 text-gray-700 dark:text-gray-300">
+                  General Secretary, Society of Women in Taxation, Oyo State
+                  Chapter. Chairman, Code of Conduct Committee, Oluyole and
+                  District Society of ICAN.
+                </dd>
+              </div>
+            </dl>
+            <p className="mt-6 text-sm text-gray-600 dark:text-gray-400">
+              Elizabeth&apos;s LinkedIn profile link will be added when
+              supplied.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-20 dark:bg-black">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-950 dark:text-white">
+            How we work
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              {
-                title: "Integrity",
-                description:
-                  "We operate with transparency and honesty in all our dealings.",
-              },
-              {
-                title: "Excellence",
-                description:
-                  "We strive for excellence in everything we do, every single day.",
-              },
-              {
-                title: "Innovation",
-                description:
-                  "We embrace new ideas and technologies to stay ahead of the curve.",
-              },
-              {
-                title: "Collaboration",
-                description:
-                  "We believe in the power of teamwork and strong partnerships.",
-              },
-            ].map((value, index) => (
+          <div className="mt-9 grid gap-6 md:grid-cols-3">
+            {workingPrinciples.map((principle) => (
               <div
-                key={index}
-                className="p-8 bg-white dark:bg-black rounded-xl border border-gray-200 dark:border-gray-800"
+                key={principle.title}
+                className="rounded-xl border border-gray-200 p-7 dark:border-gray-800"
               >
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                  {value.title}
+                <h3 className="text-xl font-semibold text-gray-950 dark:text-white">
+                  {principle.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400">
-                  {value.description}
+                <p className="mt-3 leading-7 text-gray-600 dark:text-gray-400">
+                  {principle.description}
                 </p>
               </div>
             ))}
           </div>
+          <Link
+            href="/contact"
+            className="mt-9 inline-flex rounded-lg bg-yellow-500 px-7 py-4 font-semibold text-black hover:bg-yellow-400"
+          >
+            Talk to Us
+          </Link>
         </div>
       </section>
-
-     
-     
-          </div>
-       
-        )
+    </div>
+  );
 }
