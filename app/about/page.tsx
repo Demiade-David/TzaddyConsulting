@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
+import elizabethHeadshot from "../Elizabeth's headshot.jpeg";
 
 export const metadata: Metadata = {
   title: "About Tzaddy Consulting: Elizabeth Misan-Ulori, ACA, ACTI",
@@ -71,12 +73,11 @@ export default function About() {
 
       <section className="bg-gray-50 py-20 dark:bg-gray-950">
         <div className="mx-auto grid max-w-6xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_2fr] lg:px-8">
-          <div
-            aria-label="Professional headshot to be supplied"
-            className="flex aspect-square max-h-80 items-center justify-center rounded-2xl border border-dashed border-gray-300 bg-white text-6xl font-semibold text-yellow-700 dark:border-gray-700 dark:bg-black dark:text-yellow-400"
-          >
-            EM
-          </div>
+          <Image
+            src={elizabethHeadshot}
+            alt="Elizabeth Omolade Misan-Ulori, lead consultant"
+            className="aspect-square w-full max-w-80 rounded-2xl object-cover object-center"
+          />
           <div>
             <p className="font-semibold uppercase tracking-[0.16em] text-yellow-700 dark:text-yellow-400">
               Lead consultant
@@ -86,11 +87,10 @@ export default function About() {
             </h2>
             <div className="mt-5 space-y-4 leading-8 text-gray-700 dark:text-gray-300">
               <p>
-                Elizabeth has 21 years in accounting, audit and tax. She
-                managed a private school&apos;s finances for eight years, then
-                spent eight years at Baker Tilly Nigeria in Ibadan, first in
-                audit and later in the tax department. She founded Tzaddy
-                Consulting in 2022.
+                Elizabeth has years of experience in accounting, audit and tax. She managed a
+                private school&apos;s finances for years, then spent years at
+                Baker Tilly Nigeria in Ibadan, first in audit and later in the
+                tax department. Then she founded Tzaddy Consulting.
               </p>
               <p>
                 She trains business owners and fellow accountants on tax and
@@ -110,21 +110,13 @@ export default function About() {
                   (2020). BSc Accounting, Olabisi Onabanjo University.
                 </dd>
               </div>
-              <div>
-                <dt className="font-semibold text-gray-950 dark:text-white">
-                  Professional service
-                </dt>
-                <dd className="mt-2 leading-7 text-gray-700 dark:text-gray-300">
-                  General Secretary, Society of Women in Taxation, Oyo State
-                  Chapter. Chairman, Code of Conduct Committee, Oluyole and
-                  District Society of ICAN.
-                </dd>
-              </div>
             </dl>
-            <p className="mt-6 text-sm text-gray-600 dark:text-gray-400">
-              Elizabeth&apos;s LinkedIn profile link will be added when
-              supplied.
-            </p>
+            <Link
+              href="https://www.linkedin.com/in/elizabeth-omolade-misan-ulori-aca-acti-9a1a66124?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+              className="mt-6 text-sm text-gray-600 dark:text-gray-400"
+            >
+              Elizabeth&apos;s LinkedIn Profile
+            </Link>
           </div>
         </div>
       </section>

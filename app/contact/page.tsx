@@ -125,7 +125,9 @@ export default function Contact() {
                   WhatsApp →
                 </a>
                 <a
-                  href="mailto:consultant@tzaddyconsulting.com.ng"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=consultant%40tzaddyconsulting.com.ng"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 font-semibold text-yellow-700 hover:text-yellow-800 dark:text-yellow-400 dark:hover:text-yellow-300"
                 >
                   Email →

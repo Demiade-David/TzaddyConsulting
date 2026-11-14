@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import logoIcon from "../icon.png";
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -21,11 +22,10 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="/tzaddy-mark.svg"
-              alt="Tzaddy Consulting Logo"
+              src={logoIcon}
+              alt="Tzaddy Consulting icon"
               width={44}
               height={44}
-              unoptimized
             />
             <span className="text-xl font-bold text-gray-900 dark:text-white">
               Tzaddy Consulting

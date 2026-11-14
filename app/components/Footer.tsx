@@ -52,7 +52,11 @@ export default function Footer() {
                 <a href="tel:+2349095509872">+234 909 550 9872</a>
               </p>
               <p>
-                <a href="mailto:consultant@tzaddyconsulting.com.ng">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=consultant%40tzaddyconsulting.com.ng"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   consultant@tzaddyconsulting.com.ng
                 </a>
               </p>
