@@ -113,7 +113,7 @@ export default function About() {
             </dl>
             <Link
               href="https://www.linkedin.com/in/elizabeth-omolade-misan-ulori-aca-acti-9a1a66124?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-              className="mt-6 text-sm text-gray-600 dark:text-gray-400"
+              className="mt-6 text-2xl text-gray-600 dark:text-gray-400"
             >
               Elizabeth&apos;s LinkedIn Profile
             </Link>
