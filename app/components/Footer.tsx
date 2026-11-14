@@ -53,9 +53,7 @@ export default function Footer() {
               </p>
               <p>
                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=consultant%40tzaddyconsulting.com.ng"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="mailto:consultant@tzaddyconsulting.com.ng"
                 >
                   consultant@tzaddyconsulting.com.ng
                 </a>

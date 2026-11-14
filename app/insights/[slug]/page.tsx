@@ -56,12 +56,12 @@ export default async function InsightArticle({ params }: ArticlePageProps) {
           {article.title}
         </h1>
         <p className="mt-5 text-gray-600 dark:text-gray-400">
-          {article.publishedAt ? (
-            <time dateTime={article.publishedAt}>{article.publishedAt}</time>
-          ) : (
-            "Original publication date to be confirmed"
+          {article.publishedAt && (
+            <>
+              <time dateTime={article.publishedAt}>{article.publishedAt}</time>
+              {" · "}
+            </>
           )}
-          {" · "}
           {article.author}
         </p>
         <div className="mt-6">

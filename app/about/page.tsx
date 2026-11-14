@@ -87,7 +87,7 @@ export default function About() {
             </h2>
             <div className="mt-5 space-y-4 leading-8 text-gray-700 dark:text-gray-300">
               <p>
-                Elizabeth has years of experience in accounting, audit and tax.
+                Elizabeth has 21 years of experience in accounting, audit and tax.
                 She managed a private school&apos;s finances for years, then
                 spent years at Baker Tilly Nigeria in Ibadan, first in audit and
                 later in the tax department. Then she founded Tzaddy Consulting.
@@ -106,7 +106,7 @@ export default function About() {
                 </dt>
                 <dd className="mt-2 leading-7 text-gray-700 dark:text-gray-300">
                   Associate, Institute of Chartered Accountants of Nigeria.
-                  Associate, Chartered Institute of Taxation of Nigeria . BSc
+                  Associate, Chartered Institute of Taxation of Nigeria. BSc
                   Accounting, Olabisi Onabanjo University.
                 </dd>
               </div>
